@@ -1,0 +1,122 @@
+name: Build APKs
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build All APKs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties', '**/libs.versions.toml') }}
+          restore-keys: gradle-${{ runner.os }--
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Run lint
+        run: ./gradlew lint
+
+      - name: Run unit tests
+        run: ./gradlew test
+
+      - name: Build GPlay Debug APK
+        run: ./gradlew assembleGplayDebug
+
+      - name: Build GPlay Release APK
+        run: ./gradlew assembleGplayRelease
+
+      - name: Build FDroid Debug APK
+        run: ./gradlew assembleFdroidDebug
+
+      - name: Build FDroid Release APK
+        run: ./gradlew assembleFdroidRelease
+
+      - name: Upload GPlay Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-gplay-debug
+          path: app/build/outputs/apk/gplay/debug/*.apk
+          retention-days: 14
+
+      - name: Upload GPlay Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-gplay-release
+          path: app/build/outputs/apk/gplay/release/*.apk
+          retention-days: 14
+
+      - name: Upload FDroid Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-fdroid-debug
+          path: app/build/outputs/apk/fdroid/debug/*.apk
+          retention-days: 14
+
+      - name: Upload FDroid Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-fdroid-release
+          path: app/build/outputs/apk/fdroid/release/*.apk
+          retention-days: 14
+
+  release:
+    name: Create Release with APKs
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download all APK artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: apks
+          pattern: apk-*
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.date.outputs.date }}-${{ github.run_number }}
+          name: Release ${{ steps.date.outputs.date }} (#${{ github.run_number }})
+          body: |
+            Automated release from `main` branch.
+            
+            **APK Variants:**
+            - `gplay-debug` — Google Play debug build
+            - `gplay-release` — Google Play release build
+            - `fdroid-debug` — F-Droid debug build
+            - `fdroid-release` — F-Droid release build
+          files: apks/**/*.apk
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
