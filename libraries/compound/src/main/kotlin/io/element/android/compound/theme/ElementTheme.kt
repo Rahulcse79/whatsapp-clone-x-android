@@ -96,8 +96,8 @@ fun ElementTheme(
     lightStatusBar: Boolean = !theme.isDark(),
     // true to enable MaterialYou
     dynamicColor: Boolean = false,
-    compoundLight: SemanticColors = compoundColorsLight,
-    compoundDark: SemanticColors = compoundColorsDark,
+    compoundLight: SemanticColors = whatsAppColorsLight,
+    compoundDark: SemanticColors = whatsAppColorsDark,
     materialColorsLight: ColorScheme = compoundLight.toMaterialColorScheme(),
     materialColorsDark: ColorScheme = compoundDark.toMaterialColorScheme(),
     typography: Typography = compoundTypography,
