@@ -21,7 +21,6 @@ import org.gradle.kotlin.dsl.project
 
 private fun DependencyHandlerScope.implementation(dependency: Any) = dependencies.add("implementation", dependency)
 private fun DependencyHandlerScope.testImplementation(dependency: Any) = dependencies.add("testImplementation", dependency)
-private fun DependencyHandlerScope.testReleaseImplementation(dependency: Any) = dependencies.add("testReleaseImplementation", dependency)
 internal fun DependencyHandler.implementation(dependency: Any) = add("implementation", dependency)
 
 // Implementation + config block
@@ -56,7 +55,7 @@ fun DependencyHandlerScope.testCommonDependencies(
     testImplementation(project(":tests:testutils"))
     if (includeTestComposeView) {
         testImplementation(libs.androidx.compose.ui.test.junit)
-        testReleaseImplementation(libs.androidx.compose.ui.test.manifest)
+        testImplementation(libs.androidx.compose.ui.test.manifest)
     }
 }
 

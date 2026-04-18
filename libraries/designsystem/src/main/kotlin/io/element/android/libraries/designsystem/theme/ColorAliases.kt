@@ -33,20 +33,18 @@ val SemanticColors.roomListRoomMessageDate
     get() = textSecondary
 
 val SemanticColors.unreadIndicator
-    get() = iconAccentTertiary
+    get() = if (isLight) Color(0xFF25D366) else Color(0xFF25D366)
 
 val SemanticColors.placeholderBackground
     get() = bgSubtleSecondary
 
-// This color is not present in Semantic color, so put hard-coded value for now
-@OptIn(CoreColorToken::class)
+// WhatsApp-style sent bubble: green tint in light, dark teal in dark
 val SemanticColors.messageFromMeBackground
-    get() = if (isLight) LightColorTokens.colorGray400 else DarkColorTokens.colorGray500
+    get() = if (isLight) Color(0xFFD9FDD3) else Color(0xFF005C4B)
 
-// This color is not present in Semantic color, so put hard-coded value for now
-@OptIn(CoreColorToken::class)
+// WhatsApp-style received bubble: white in light, dark surface in dark
 val SemanticColors.messageFromOtherBackground
-    get() = if (isLight) LightColorTokens.colorGray300 else DarkColorTokens.colorGray400
+    get() = if (isLight) Color(0xFFFFFFFF) else Color(0xFF1F2C34)
 
 // This color is not present in Semantic color, so put hard-coded value for now
 @OptIn(CoreColorToken::class)

@@ -18,6 +18,7 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
@@ -27,6 +28,28 @@ import io.element.android.libraries.designsystem.components.button.BackButton
 import io.element.android.libraries.designsystem.preview.ElementThemedPreview
 import io.element.android.libraries.designsystem.preview.PreviewGroup
 import io.element.android.libraries.designsystem.theme.aliasScreenTitle
+
+/**
+ * WhatsApp-style top bar colors: teal background in light, dark surface in dark.
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun whatsAppTopAppBarColors(): TopAppBarColors {
+    val isLight = ElementTheme.isLightTheme
+    val containerColor = if (isLight) {
+        ElementTheme.colors.bgAccentRest
+    } else {
+        ElementTheme.colors.bgCanvasDefaultLevel1
+    }
+    val contentColor = if (isLight) Color.White else ElementTheme.colors.textPrimary
+    return TopAppBarDefaults.topAppBarColors(
+        containerColor = containerColor,
+        scrolledContainerColor = containerColor,
+        titleContentColor = contentColor,
+        navigationIconContentColor = contentColor,
+        actionIconContentColor = contentColor,
+    )
+}
 
 /**
  * A top app bar that displays a title string, navigation icon, and actions.
@@ -46,7 +69,7 @@ fun TopAppBar(
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {},
     windowInsets: WindowInsets = TopAppBarDefaults.windowInsets,
-    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(),
+    colors: TopAppBarColors = whatsAppTopAppBarColors(),
     scrollBehavior: TopAppBarScrollBehavior? = null
 ) {
     TopAppBar(
@@ -86,7 +109,7 @@ fun TopAppBar(
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {},
     windowInsets: WindowInsets = TopAppBarDefaults.windowInsets,
-    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(),
+    colors: TopAppBarColors = whatsAppTopAppBarColors(),
     scrollBehavior: TopAppBarScrollBehavior? = null
 ) {
     androidx.compose.material3.TopAppBar(

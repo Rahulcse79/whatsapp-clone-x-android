@@ -54,7 +54,6 @@ import io.element.android.libraries.designsystem.components.TopAppBarScrollBehav
 import io.element.android.libraries.designsystem.components.avatar.Avatar
 import io.element.android.libraries.designsystem.components.avatar.AvatarSize
 import io.element.android.libraries.designsystem.components.avatar.AvatarType
-import io.element.android.libraries.designsystem.modifiers.backgroundVerticalGradient
 import io.element.android.libraries.designsystem.preview.ElementPreview
 import io.element.android.libraries.designsystem.preview.PreviewsDayNight
 import io.element.android.libraries.designsystem.theme.aliasScreenTitle
@@ -95,15 +94,26 @@ fun HomeTopBar(
     modifier: Modifier = Modifier,
 ) {
     Column(modifier) {
+        val isLight = ElementTheme.isLightTheme
+        val topBarContainerColor = if (isLight) {
+            ElementTheme.colors.bgAccentRest
+        } else {
+            ElementTheme.colors.bgCanvasDefaultLevel1
+        }
+        val topBarContentColor = if (isLight) {
+            Color.White
+        } else {
+            ElementTheme.colors.textPrimary
+        }
         TopAppBar(
             modifier = Modifier
-                .backgroundVerticalGradient(
-                    isVisible = !areSearchResultsDisplayed,
-                )
                 .statusBarsPadding(),
             colors = TopAppBarDefaults.topAppBarColors(
-                containerColor = Color.Transparent,
-                scrolledContainerColor = Color.Transparent,
+                containerColor = topBarContainerColor,
+                scrolledContainerColor = topBarContainerColor,
+                titleContentColor = topBarContentColor,
+                navigationIconContentColor = topBarContentColor,
+                actionIconContentColor = topBarContentColor,
             ),
             title = {
                 val displayTitle = when (selectedNavigationItem) {
