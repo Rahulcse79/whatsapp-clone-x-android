@@ -11,6 +11,8 @@ package io.element.android.compound.colors
 import io.element.android.compound.tokens.generated.SemanticColors
 import io.element.android.compound.tokens.generated.compoundColorsDark
 import io.element.android.compound.tokens.generated.compoundColorsLight
+import io.element.android.compound.theme.whatsAppColorsLight
+import io.element.android.compound.theme.whatsAppColorsDark
 
 data class SemanticColorsLightDark(
     val light: SemanticColors,
@@ -18,8 +20,8 @@ data class SemanticColorsLightDark(
 ) {
     companion object {
         val default = SemanticColorsLightDark(
-            light = compoundColorsLight,
-            dark = compoundColorsDark,
+            light = whatsAppColorsLight,
+            dark = whatsAppColorsDark,
         )
     }
 }
