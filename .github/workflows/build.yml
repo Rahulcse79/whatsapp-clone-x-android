@@ -42,6 +42,9 @@ jobs:
       - name: Run lint
         run: ./gradlew lint
 
+      - name: Record Roborazzi screenshots
+        run: ./gradlew :libraries:compound:recordRoborazziDebug
+
       - name: Run unit tests
         run: ./gradlew test
 
