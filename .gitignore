@@ -1,0 +1,39 @@
+# Build outputs
+build/
+app/build/
+**/build/
+
+# Gradle
+.gradle/
+gradle-app.setting
+*.gradle.kts.dsl
+!gradle/wrapper/gradle-wrapper.jar
+
+# APKs / AABs
+*.apk
+*.aab
+
+# Native libs (large .so files)
+*.so
+
+# Local config
+local.properties
+*.local
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Keystore files (security)
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Test results
+test-results/
+jacoco/
