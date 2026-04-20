@@ -8,6 +8,7 @@
 
 package io.element.android.features.home.impl.components
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
@@ -24,13 +25,18 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ripple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextOverflow
@@ -286,8 +292,7 @@ private fun MessagePreviewAndIndicatorRow(
                 text = stringResource(R.string.screen_roomlist_tombstoned_room_description),
                 color = ElementTheme.colors.roomListRoomMessage,
                 style = ElementTheme.typography.fontBodyMdRegular,
-                minLines = 2,
-                maxLines = 2,
+                maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
         } else {
@@ -307,8 +312,7 @@ private fun MessagePreviewAndIndicatorRow(
                     text = stringResource(CommonStrings.common_message_failed_to_send),
                     color = ElementTheme.colors.textCriticalPrimary,
                     style = ElementTheme.typography.fontBodyMdRegular,
-                    minLines = 2,
-                    maxLines = 2,
+                    maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                 )
             } else {
@@ -330,8 +334,7 @@ private fun MessagePreviewAndIndicatorRow(
                     text = annotatedMessagePreview,
                     color = ElementTheme.colors.roomListRoomMessage,
                     style = ElementTheme.typography.fontBodyMdRegular,
-                    minLines = 2,
-                    maxLines = 2,
+                    maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                 )
             }
@@ -360,10 +363,17 @@ private fun MessagePreviewAndIndicatorRow(
             }
             if (room.hasNewContent) {
                 val contentDescription = stringResource(CommonStrings.a11y_notifications_new_messages)
-                UnreadIndicatorAtom(
-                    color = tint,
-                    contentDescription = contentDescription,
-                )
+                if (room.numberOfUnreadMessages > 0) {
+                    UnreadCountBadge(
+                        count = room.numberOfUnreadMessages,
+                        contentDescription = contentDescription,
+                    )
+                } else {
+                    UnreadIndicatorAtom(
+                        color = tint,
+                        contentDescription = contentDescription,
+                    )
+                }
             }
         }
     }
@@ -428,6 +438,42 @@ private fun MentionIndicatorAtom() {
         imageVector = CompoundIcons.Mention(),
         tint = ElementTheme.colors.unreadIndicator,
     )
+}
+
+/**
+ * WhatsApp-style unread count badge: bright green pill with white count text and a
+ * soft green glow shadow for that premium feel. Shows "99+" for counts greater than 99.
+ */
+@Composable
+private fun UnreadCountBadge(
+    count: Long,
+    contentDescription: String,
+    modifier: Modifier = Modifier,
+) {
+    val label = if (count > 99) "99+" else count.toString()
+    val isSingleDigit = label.length == 1
+    val shape = if (isSingleDigit) CircleShape else RoundedCornerShape(10.dp)
+    androidx.compose.material3.Surface(
+        modifier = modifier
+            .semantics { this.contentDescription = contentDescription }
+            .height(20.dp)
+            .let { if (isSingleDigit) it.size(20.dp) else it },
+        shape = shape,
+        color = Color(0xFF25D366),
+        shadowElevation = 4.dp,
+    ) {
+        Box(
+            modifier = Modifier.padding(horizontal = if (isSingleDigit) 0.dp else 6.dp),
+            contentAlignment = Alignment.Center,
+        ) {
+            Text(
+                text = label,
+                style = ElementTheme.typography.fontBodyXsMedium,
+                color = Color.White,
+                maxLines = 1,
+            )
+        }
+    }
 }
 
 @PreviewsDayNight

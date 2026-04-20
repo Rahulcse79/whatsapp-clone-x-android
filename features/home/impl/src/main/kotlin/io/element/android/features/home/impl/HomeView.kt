@@ -19,16 +19,22 @@ import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.FabPosition
+import androidx.compose.material3.Surface
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
@@ -59,7 +65,6 @@ import io.element.android.features.home.impl.spaces.HomeSpacesView
 import io.element.android.libraries.androidutils.throttler.FirstThrottler
 import io.element.android.libraries.designsystem.preview.ElementPreview
 import io.element.android.libraries.designsystem.preview.PreviewsDayNight
-import io.element.android.libraries.designsystem.theme.components.FloatingActionButton
 import io.element.android.libraries.designsystem.theme.components.HorizontalFloatingToolbar
 import io.element.android.libraries.designsystem.theme.components.HorizontalFloatingToolbarItem
 import io.element.android.libraries.designsystem.theme.components.HorizontalFloatingToolbarSeparator
@@ -192,10 +197,9 @@ private fun HomeScaffold(
                 filtersState = roomListState.filtersState,
                 spaceFiltersState = roomListState.spaceFiltersState,
                 canReportBug = state.canReportBug,
-                modifier = Modifier.hazeEffect(
-                    state = hazeState,
-                    style = HazeMaterials.thick(),
-                )
+                // Removed HazeMaterials.thick() frosted-glass effect — it was painting a
+                // translucent white over our WhatsApp-green top bar and washing out the color.
+                modifier = Modifier,
             )
         },
         floatingActionButton = {
@@ -297,11 +301,36 @@ private fun HomeFloatingActionButton(
     contentDescription: Int,
     modifier: Modifier = Modifier,
 ) {
-    FloatingActionButton(onClick = onClick, modifier = modifier) {
-        Icon(
-            imageVector = CompoundIcons.Plus(),
-            contentDescription = stringResource(id = contentDescription),
-        )
+    // WhatsApp-style FAB: vertical green gradient (bright → primary) with strong elevation,
+    // larger 60dp size, white icon. Looks more premium than a flat color.
+    Surface(
+        onClick = onClick,
+        modifier = modifier.size(60.dp),
+        shape = CircleShape,
+        color = Color.Transparent,
+        shadowElevation = 10.dp,
+        tonalElevation = 0.dp,
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    brush = Brush.verticalGradient(
+                        colors = listOf(
+                            Color(0xFF25D366),
+                            Color(0xFF128C7E),
+                        )
+                    ),
+                    shape = CircleShape,
+                ),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = CompoundIcons.Plus(),
+                contentDescription = stringResource(id = contentDescription),
+                tint = Color.White,
+            )
+        }
     }
 }
 

@@ -38,9 +38,9 @@ val SemanticColors.unreadIndicator
 val SemanticColors.placeholderBackground
     get() = bgSubtleSecondary
 
-// WhatsApp-style sent bubble: green tint in light, dark teal in dark
+// WhatsApp-style sent bubble: classic light green in light, dark teal in dark
 val SemanticColors.messageFromMeBackground
-    get() = if (isLight) Color(0xFFD9FDD3) else Color(0xFF005C4B)
+    get() = if (isLight) Color(0xFFDCF8C6) else Color(0xFF005C4B)
 
 // WhatsApp-style received bubble: white in light, dark surface in dark
 val SemanticColors.messageFromOtherBackground

@@ -10,11 +10,16 @@ import androidx.compose.ui.graphics.Color
 import io.element.android.compound.tokens.generated.SemanticColors
 
 // ── WhatsApp brand palette ──────────────────────────────────────────
+// Authentic WhatsApp greens:
+//   tealLight #25D366 → bright accent (FAB, unread badge, status)
+//   teal      #128C7E → primary brand (icons, secondary actions)
+//   tealDark  #075E54 → classic top-bar / strong accents
+//   tealPale  #DCF8C6 → outgoing message bubble tint
 private object WaLight {
-    val teal = Color(0xFF00A884)
-    val tealDark = Color(0xFF008069)
+    val teal = Color(0xFF128C7E)
+    val tealDark = Color(0xFF075E54)
     val tealLight = Color(0xFF25D366)
-    val tealPale = Color(0xFFD9FDD3)
+    val tealPale = Color(0xFFDCF8C6)
     val bg = Color(0xFFFFFFFF)
     val surface = Color(0xFFF0F2F5)
     val surfaceAlt = Color(0xFFE9EDEF)

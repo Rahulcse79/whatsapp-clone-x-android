@@ -50,7 +50,7 @@ import io.element.android.libraries.testtags.testTag
 import io.element.android.libraries.ui.utils.graphics.drawInLayer
 import io.element.android.libraries.ui.utils.time.isTalkbackActive
 
-private val BUBBLE_RADIUS = 12.dp
+private val BUBBLE_RADIUS = 14.dp
 private val avatarRadius = AvatarSize.TimelineSender.dp / 2
 
 private val MIN_BUBBLE_WIDTH = 80.dp
@@ -139,12 +139,17 @@ fun MessageEventBubble(
 
 object MessageEventBubbleDefaults {
     fun shape(cutTopStart: Boolean, groupPosition: TimelineItemGroupPosition, isMine: Boolean): Shape {
+        // WhatsApp-style "tail": the corner without radius is on the TOP side of the
+        // first/standalone bubble (top-right for outgoing, top-left for incoming).
+        // Subsequent bubbles in a group keep the inner edge flat for the stacked look.
         val topLeftCorner = if (cutTopStart) 0.dp else BUBBLE_RADIUS
         return when (groupPosition) {
             TimelineItemGroupPosition.First -> if (isMine) {
-                RoundedCornerShape(BUBBLE_RADIUS, BUBBLE_RADIUS, 0.dp, BUBBLE_RADIUS)
+                // Tail on top-right
+                RoundedCornerShape(BUBBLE_RADIUS, 0.dp, BUBBLE_RADIUS, BUBBLE_RADIUS)
             } else {
-                RoundedCornerShape(topLeftCorner, BUBBLE_RADIUS, BUBBLE_RADIUS, 0.dp)
+                // Tail on top-left (respect cutTopStart for avatar overlap)
+                RoundedCornerShape(if (cutTopStart) 0.dp else 0.dp, BUBBLE_RADIUS, BUBBLE_RADIUS, BUBBLE_RADIUS)
             }
             TimelineItemGroupPosition.Middle -> if (isMine) {
                 RoundedCornerShape(BUBBLE_RADIUS, 0.dp, 0.dp, BUBBLE_RADIUS)
@@ -156,13 +161,13 @@ object MessageEventBubbleDefaults {
             } else {
                 RoundedCornerShape(0.dp, BUBBLE_RADIUS, BUBBLE_RADIUS, BUBBLE_RADIUS)
             }
-            TimelineItemGroupPosition.None ->
-                RoundedCornerShape(
-                    topLeftCorner,
-                    BUBBLE_RADIUS,
-                    BUBBLE_RADIUS,
-                    BUBBLE_RADIUS
-                )
+            TimelineItemGroupPosition.None -> if (isMine) {
+                // Standalone outgoing bubble — tail on top-right
+                RoundedCornerShape(BUBBLE_RADIUS, 0.dp, BUBBLE_RADIUS, BUBBLE_RADIUS)
+            } else {
+                // Standalone incoming bubble — tail on top-left
+                RoundedCornerShape(topLeftCorner, BUBBLE_RADIUS, BUBBLE_RADIUS, BUBBLE_RADIUS)
+            }
         }
     }
 
