@@ -1,0 +1,33 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2022 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="io.element.android.features.login.impl" >
+11
+12    <uses-sdk android:minSdkVersion="24" />
+13
+14    <queries>
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:10:5-19:15
+15
+16        <!--
+17         To open URL in CustomTab (prefetch, etc.). It makes CustomTabsClient.getPackageName() work
+18         see https://developer.android.com/training/package-visibility/use-cases#open-urls-custom-tabs
+19        -->
+20        <intent>
+20-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:13:9-15:18
+21            <action android:name="android.support.customtabs.action.CustomTabsService" />
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:14:13-90
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:14:21-87
+22        </intent>
+23
+24        <!-- To be able to start the service exported by Element Classic -->
+25        <package android:name="im.vector.app.debug" />
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:18:18-57
+26    </queries>
+27
+28</manifest>

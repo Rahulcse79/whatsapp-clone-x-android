@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2023 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="io.element.android.features.call.impl" >
+11
+12    <uses-sdk android:minSdkVersion="24" />
+13
+14    <uses-feature
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:10:5-12:36
+15        android:name="android.hardware.camera"
+15-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:11:9-47
+16        android:required="false" />
+16-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:12:9-33
+17    <uses-feature
+17-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:13:5-15:36
+18        android:name="android.hardware.microphone"
+18-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:14:9-51
+19        android:required="false" />
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:15:9-33
+20
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:17:5-77
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:17:22-74
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:18:5-71
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:18:22-68
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:19:5-65
+23-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:19:22-62
+24    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:20:5-80
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:20:22-77
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:21:5-68
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:21:22-65
+26
+27    <!-- Permissions for call foreground services -->
+28    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+28-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:24:5-77
+28-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:24:22-74
+29    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+29-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:25:5-88
+29-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:25:22-85
+30    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+30-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:27:5-81
+30-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:27:22-78
+31
+32    <application>
+32-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:29:5-91:19
+33        <activity
+33-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:30:9-70:20
+34            android:name="io.element.android.features.call.impl.ui.ElementCallActivity"
+34-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:31:13-51
+35            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|keyboard|navigation|uiMode"
+35-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:32:13-133
+36            android:exported="true"
+36-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:33:13-36
+37            android:label="@string/element_call"
+37-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:34:13-49
+38            android:launchMode="singleTask"
+38-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:35:13-44
+39            android:supportsPictureInPicture="true"
+39-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:36:13-52
+40            android:taskAffinity="io.element.android.features.call" >
+40-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:37:13-68
+41            <intent-filter android:autoVerify="true" >
+41-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:39:13-49:29
+41-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:39:28-53
+42                <action android:name="android.intent.action.VIEW" />
+42-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:17-69
+42-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:25-66
+43
+44                <category android:name="android.intent.category.DEFAULT" />
+44-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:17-76
+44-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:27-73
+45                <category android:name="android.intent.category.BROWSABLE" />
+45-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:17-78
+45-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:27-75
+46
+47                <data android:scheme="https" />
+47-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+47-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:23-45
+48
+49                <!-- Matching asset file: https://call.element.io/.well-known/assetlinks.json -->
+50                <data android:host="call.element.io" />
+50-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+50-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:48:23-53
+51            </intent-filter>
+52            <!-- Custom scheme to handle urls from other domains in the format: element://call?url=https%3A%2F%2Felement.io -->
+53            <intent-filter>
+53-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:51:13-59:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:17-69
+54-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:17-76
+56-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:27-73
+57                <category android:name="android.intent.category.BROWSABLE" />
+57-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:17-78
+57-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:27-75
+58
+59                <data android:scheme="element" />
+59-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+59-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:23-45
+60                <data android:host="call" />
+60-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+60-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:48:23-53
+61            </intent-filter>
+62            <!-- Custom scheme to handle urls from other domains in the format: io.element.call:/?url=https%3A%2F%2Felement.io -->
+63            <intent-filter>
+63-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:61:13-68:29
+64                <action android:name="android.intent.action.VIEW" />
+64-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:17-69
+64-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:25-66
+65
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:17-76
+66-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:27-73
+67                <category android:name="android.intent.category.BROWSABLE" />
+67-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:17-78
+67-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:27-75
+68
+69                <data android:scheme="io.element.call" />
+69-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+69-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:23-45
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:72:9-78:71
+73            android:name="io.element.android.features.call.impl.ui.IncomingCallActivity"
+73-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:73:13-52
+74            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard|navigation|uiMode"
+74-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:74:13-114
+75            android:excludeFromRecents="true"
+75-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:75:13-46
+76            android:exported="false"
+76-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:76:13-37
+77            android:launchMode="singleTask"
+77-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:77:13-44
+78            android:taskAffinity="io.element.android.features.call" />
+78-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:78:13-68
+79
+80        <service
+80-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:80:9-84:58
+81            android:name="io.element.android.features.call.impl.services.CallForegroundService"
+81-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:81:13-59
+82            android:enabled="true"
+82-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:82:13-35
+83            android:exported="false"
+83-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:83:13-37
+84            android:foregroundServiceType="microphone" />
+84-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:84:13-55
+85
+86        <receiver
+86-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:86:9-89:40
+87            android:name="io.element.android.features.call.impl.receivers.DeclineCallBroadcastReceiver"
+87-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:87:13-67
+88            android:enabled="true"
+88-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:88:13-35
+89            android:exported="false" />
+89-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:89:13-37
+90    </application>
+91
+92</manifest>

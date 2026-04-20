@@ -1,0 +1,40 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2023 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="io.element.android.libraries.pushproviders.firebase" >
+11
+12    <uses-sdk android:minSdkVersion="24" />
+13
+14    <application>
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:9:5-21:19
+15
+16        <!-- Firebase components -->
+17        <meta-data
+17-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:11:9-13:36
+18            android:name="firebase_analytics_collection_deactivated"
+18-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:12:13-69
+19            android:value="true" />
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:13:13-33
+20
+21        <service
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:14:9-20:19
+22            android:name="io.element.android.libraries.pushproviders.firebase.VectorFirebaseMessagingService"
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:15:13-110
+23            android:exported="false" >
+23-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:16:13-37
+24            <intent-filter>
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:17:13-19:29
+25                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:18:17-78
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/firebase/src/main/AndroidManifest.xml:18:25-75
+26            </intent-filter>
+27        </service>
+28    </application>
+29
+30</manifest>

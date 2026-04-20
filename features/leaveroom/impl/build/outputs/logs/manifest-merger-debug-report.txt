@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml:2:13-83
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml:2:13-83
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml:2:23-81
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/leaveroom/impl/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4805705614562446946.xml

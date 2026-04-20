@@ -1,0 +1,9 @@
+io.element.android.features.announcement.impl
+string screen_space_announcement_item1
+string screen_space_announcement_item2
+string screen_space_announcement_item3
+string screen_space_announcement_item4
+string screen_space_announcement_item5
+string screen_space_announcement_notice
+string screen_space_announcement_subtitle
+string screen_space_announcement_title

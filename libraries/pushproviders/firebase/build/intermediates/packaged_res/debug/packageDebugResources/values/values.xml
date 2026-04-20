@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string name="default_web_client_id" translatable="false">912726360885-e87n3jva9uoj4vbidvijq78ebg02asv2.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://vector-alpha.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">912726360885</string>
+    <string name="google_api_key" translatable="false">AIzaSyAFZX8IhIfgzdOZvxDP_ISO5WYoU7jmQ5c</string>
+    <string name="google_app_id" translatable="false">1:912726360885:android:def0a4e454042e9b00427c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAFZX8IhIfgzdOZvxDP_ISO5WYoU7jmQ5c</string>
+    <string name="google_storage_bucket" translatable="false">vector-alpha.appspot.com</string>
+    <string name="project_id" ns1:ignore="UnusedResources" translatable="false">vector-alpha</string>
+    <string name="troubleshoot_notifications_test_firebase_availability_description">"Ensure that Firebase is available."</string>
+    <string name="troubleshoot_notifications_test_firebase_availability_failure">"Firebase is not available."</string>
+    <string name="troubleshoot_notifications_test_firebase_availability_success">"Firebase is available."</string>
+    <string name="troubleshoot_notifications_test_firebase_availability_title">"Check Firebase"</string>
+    <string name="troubleshoot_notifications_test_firebase_token_description">"Ensure that Firebase token is available."</string>
+    <string name="troubleshoot_notifications_test_firebase_token_failure">"Firebase token is not known."</string>
+    <string name="troubleshoot_notifications_test_firebase_token_success">"Firebase token: %1$s."</string>
+    <string name="troubleshoot_notifications_test_firebase_token_title">"Check Firebase token"</string>
+</resources>

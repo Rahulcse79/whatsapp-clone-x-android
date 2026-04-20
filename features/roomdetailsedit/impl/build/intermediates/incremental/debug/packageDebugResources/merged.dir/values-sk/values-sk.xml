@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_room_details_edit_room_title">"Upraviť podrobnosti"</string>
+    <string name="screen_room_details_edition_error">"Vyskytla sa neznáma chyba a informácie nebolo možné zmeniť."</string>
+    <string name="screen_room_details_edition_error_title">"Nepodarilo sa aktualizovať miestnosť"</string>
+    <string name="screen_room_details_updating_room">"Aktualizácia miestnosti…"</string>
+</resources>

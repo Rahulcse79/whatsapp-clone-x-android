@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string screen_join_room_loading_alert_title
+string screen_room_alias_resolver_resolve_alias_failure

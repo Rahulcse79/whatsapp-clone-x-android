@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+string banner_migrate_to_native_sliding_sync_action
+string banner_migrate_to_native_sliding_sync_app_force_logout_title
+string banner_migrate_to_native_sliding_sync_force_logout_title

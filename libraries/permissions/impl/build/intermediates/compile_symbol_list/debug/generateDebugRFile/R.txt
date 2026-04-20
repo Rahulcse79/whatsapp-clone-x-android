@@ -1,0 +1,2 @@
+int string troubleshoot_notifications_test_check_permission_description 0x0
+int string troubleshoot_notifications_test_check_permission_title 0x0

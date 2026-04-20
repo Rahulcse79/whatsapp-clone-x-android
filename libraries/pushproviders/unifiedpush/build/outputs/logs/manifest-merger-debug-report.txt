@@ -1,0 +1,66 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:8:1-38:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:8:1-38:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:9:5-51
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:8:11-69
+application
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:10:5-37:19
+receiver#io.element.android.libraries.pushproviders.unifiedpush.VectorUnifiedPushMessagingReceiver
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:11:9-23:20
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:13:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:14:13-36
+	tools:ignore
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:15:13-44
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:12:13-63
+intent-filter#action:name:org.unifiedpush.android.connector.MESSAGE+action:name:org.unifiedpush.android.connector.NEW_ENDPOINT+action:name:org.unifiedpush.android.connector.REGISTRATION_FAILED+action:name:org.unifiedpush.android.connector.REGISTRATION_REFUSED+action:name:org.unifiedpush.android.connector.UNREGISTERED
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:16:13-22:29
+action#org.unifiedpush.android.connector.MESSAGE
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:17:17-84
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:17:25-81
+action#org.unifiedpush.android.connector.UNREGISTERED
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:18:17-89
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:18:25-86
+action#org.unifiedpush.android.connector.NEW_ENDPOINT
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:19:17-89
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:19:25-86
+action#org.unifiedpush.android.connector.REGISTRATION_FAILED
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:20:17-96
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:20:25-93
+action#org.unifiedpush.android.connector.REGISTRATION_REFUSED
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:21:17-97
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:21:25-94
+receiver#io.element.android.libraries.pushproviders.unifiedpush.KeepInternalDistributor
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:24:9-36:20
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:25:13-52
+intent-filter#action:name:org.unifiedpush.android.distributor.REGISTER
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:28:13-35:29
+action#org.unifiedpush.android.distributor.REGISTER
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:34:17-87
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:34:25-84
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml

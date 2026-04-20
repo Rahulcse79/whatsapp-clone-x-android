@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+plurals troubleshoot_notifications_test_unified_push_success
+string troubleshoot_notifications_test_unified_push_description
+string troubleshoot_notifications_test_unified_push_failure
+string troubleshoot_notifications_test_unified_push_title

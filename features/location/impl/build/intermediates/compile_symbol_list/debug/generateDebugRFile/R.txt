@@ -1,0 +1,2 @@
+int string screen_share_location_live_location_disclaimer_title 0x0
+int string screen_share_location_live_location_duration_picker_title 0x0

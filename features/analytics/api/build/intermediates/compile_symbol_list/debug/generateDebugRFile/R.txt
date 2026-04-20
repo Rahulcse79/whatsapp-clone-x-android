@@ -1,0 +1,4 @@
+int string screen_analytics_settings_help_us_improve 0x0
+int string screen_analytics_settings_read_terms 0x0
+int string screen_analytics_settings_read_terms_content_link 0x0
+int string screen_analytics_settings_share_data 0x0

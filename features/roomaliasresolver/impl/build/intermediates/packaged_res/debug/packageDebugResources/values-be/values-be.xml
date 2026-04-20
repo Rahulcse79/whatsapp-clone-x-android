@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_room_alias_resolver_resolve_alias_failure">"Не ўдалося разабрацца з псеўданімам пакоя."</string>
+</resources>

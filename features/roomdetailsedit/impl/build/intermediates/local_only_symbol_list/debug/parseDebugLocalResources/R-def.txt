@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+string screen_room_details_edit_room_title
+string screen_room_details_edition_error
+string screen_room_details_edition_error_title
+string screen_room_details_updating_room

@@ -1,0 +1,4 @@
+int string screen_room_details_edit_room_title 0x0
+int string screen_room_details_edition_error 0x0
+int string screen_room_details_edition_error_title 0x0
+int string screen_room_details_updating_room 0x0

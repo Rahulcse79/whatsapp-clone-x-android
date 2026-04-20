@@ -1,0 +1,7 @@
+int string screen_analytics_prompt_data_usage 0x0
+int string screen_analytics_prompt_help_us_improve 0x0
+int string screen_analytics_prompt_read_terms 0x0
+int string screen_analytics_prompt_read_terms_content_link 0x0
+int string screen_analytics_prompt_settings 0x0
+int string screen_analytics_prompt_third_party_sharing 0x0
+int string screen_analytics_prompt_title 0x0

@@ -1,0 +1,5 @@
+io.element.android.libraries.permissions.api
+string dialog_permission_camera
+string dialog_permission_generic
+string dialog_permission_microphone
+string dialog_permission_notification

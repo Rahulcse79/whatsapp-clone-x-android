@@ -1,0 +1,5 @@
+io.element.android.features.analytics.api
+string screen_analytics_settings_help_us_improve
+string screen_analytics_settings_read_terms
+string screen_analytics_settings_read_terms_content_link
+string screen_analytics_settings_share_data

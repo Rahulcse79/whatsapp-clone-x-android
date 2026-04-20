@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2023 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="io.element.android.libraries.push.impl" >
+11
+12    <uses-sdk android:minSdkVersion="24" />
+13
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:10:5-77
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:10:22-74
+15    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+15-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:11:5-95
+15-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:11:22-92
+16
+17    <application>
+17-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:13:5-37:19
+18        <service
+18-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:14:9-17:38
+19            android:name="io.element.android.libraries.push.impl.push.FetchPushForegroundService"
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:14:18-65
+20            android:enabled="true"
+20-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:17:13-35
+21            android:exported="false"
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:16:13-37
+22            android:foregroundServiceType="shortService" />
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:15:13-57
+23
+24        <receiver
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:19:9-21:40
+25            android:name="io.element.android.libraries.push.impl.notifications.TestNotificationReceiver"
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:20:13-67
+26            android:exported="false" />
+26-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:21:13-37
+27        <receiver
+27-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:22:9-25:40
+28            android:name="io.element.android.libraries.push.impl.notifications.NotificationBroadcastReceiver"
+28-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:23:13-72
+29            android:enabled="true"
+29-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:24:13-35
+30            android:exported="false" />
+30-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:25:13-37
+31
+32        <provider
+32-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:27:9-35:20
+33            android:name="io.element.android.libraries.push.impl.notifications.NotificationsFileProvider"
+33-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:28:13-68
+34            android:authorities="${applicationId}.notifications.fileprovider"
+34-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:29:13-78
+35            android:exported="false"
+35-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:30:13-37
+36            android:grantUriPermissions="true" >
+36-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:31:13-47
+37            <meta-data
+37-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:32:13-34:72
+38                android:name="android.support.FILE_PROVIDER_PATHS"
+38-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:33:17-67
+39                android:resource="@xml/notifications_provider_paths" />
+39-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:34:17-69
+40        </provider>
+41    </application>
+42
+43</manifest>

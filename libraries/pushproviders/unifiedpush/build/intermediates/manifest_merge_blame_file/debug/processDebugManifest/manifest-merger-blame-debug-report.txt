@@ -1,0 +1,69 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2023 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    xmlns:tools="http://schemas.android.com/tools"
+11    package="io.element.android.libraries.pushproviders.unifiedpush" >
+12
+13    <uses-sdk android:minSdkVersion="24" />
+14
+15    <application>
+15-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:10:5-37:19
+16        <receiver
+16-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:11:9-23:20
+17            android:name="io.element.android.libraries.pushproviders.unifiedpush.VectorUnifiedPushMessagingReceiver"
+17-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:12:13-63
+18            android:enabled="true"
+18-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:13:13-35
+19            android:exported="true"
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:14:13-36
+20            tools:ignore="ExportedReceiver" >
+20-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:15:13-44
+21            <intent-filter>
+21-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:16:13-22:29
+22                <action android:name="org.unifiedpush.android.connector.MESSAGE" />
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:17:17-84
+22-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:17:25-81
+23                <action android:name="org.unifiedpush.android.connector.UNREGISTERED" />
+23-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:18:17-89
+23-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:18:25-86
+24                <action android:name="org.unifiedpush.android.connector.NEW_ENDPOINT" />
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:19:17-89
+24-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:19:25-86
+25                <action android:name="org.unifiedpush.android.connector.REGISTRATION_FAILED" />
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:20:17-96
+25-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:20:25-93
+26                <action android:name="org.unifiedpush.android.connector.REGISTRATION_REFUSED" />
+26-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:21:17-97
+26-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:21:25-94
+27            </intent-filter>
+28        </receiver>
+29        <receiver
+29-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:24:9-36:20
+30            android:name="io.element.android.libraries.pushproviders.unifiedpush.KeepInternalDistributor"
+30-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:25:13-52
+31            android:enabled="true"
+31-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:26:13-35
+32            android:exported="false" >
+32-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:27:13-37
+33            <intent-filter>
+33-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:28:13-35:29
+34
+35                <!--
+36                This action is checked to track installed and uninstalled distributors.
+37                We declare it to keep the background sync as an internal
+38                unifiedpush distributor.
+39                -->
+40                <action android:name="org.unifiedpush.android.distributor.REGISTER" />
+40-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:34:17-87
+40-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/pushproviders/unifiedpush/src/main/AndroidManifest.xml:34:25-84
+41            </intent-filter>
+42        </receiver>
+43    </application>
+44
+45</manifest>

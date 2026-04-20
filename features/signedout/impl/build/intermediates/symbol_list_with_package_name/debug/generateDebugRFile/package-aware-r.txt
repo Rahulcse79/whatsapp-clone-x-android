@@ -1,0 +1,6 @@
+io.element.android.features.signedout.impl
+string screen_signed_out_reason_1
+string screen_signed_out_reason_2
+string screen_signed_out_reason_3
+string screen_signed_out_subtitle
+string screen_signed_out_title

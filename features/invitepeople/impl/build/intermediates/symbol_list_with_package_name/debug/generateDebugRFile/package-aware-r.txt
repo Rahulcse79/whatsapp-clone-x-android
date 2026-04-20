@@ -1,0 +1,5 @@
+io.element.android.features.invitepeople.impl
+plurals screen_invite_users_confirm_dialog_subtitle
+plurals screen_invite_users_confirm_dialog_title
+string screen_invite_users_already_a_member
+string screen_invite_users_already_invited

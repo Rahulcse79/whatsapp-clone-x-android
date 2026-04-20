@@ -1,0 +1,8 @@
+io.element.android.features.leaveroom.api
+string leave_conversation_alert_subtitle
+string leave_room_alert_empty_subtitle
+string leave_room_alert_private_subtitle
+string leave_room_alert_select_new_owner_action
+string leave_room_alert_select_new_owner_subtitle
+string leave_room_alert_select_new_owner_title
+string leave_room_alert_subtitle

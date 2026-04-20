@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+package#im.vector.app.debug
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:18:9-60
+	android:name
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:18:18-57
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:8:1-21:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:8:1-21:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:8:11-69
+queries
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:10:5-19:15
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:13:9-15:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:14:13-90
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml:14:21-87
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/login/impl/src/main/AndroidManifest.xml

@@ -1,0 +1,4 @@
+int plurals screen_invite_users_confirm_dialog_subtitle 0x0
+int plurals screen_invite_users_confirm_dialog_title 0x0
+int string screen_invite_users_already_a_member 0x0
+int string screen_invite_users_already_invited 0x0

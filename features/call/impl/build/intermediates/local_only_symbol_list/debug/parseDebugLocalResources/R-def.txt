@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+string call_foreground_service_channel_title_android
+string call_foreground_service_message_android
+string call_foreground_service_title_android
+string call_invalid_audio_device_bluetooth_devices_disabled
+string element_call
+string screen_incoming_call_subtitle_android

@@ -1,0 +1,24 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:8:1-16:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:8:1-16:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:8:11-69
+application
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:10:5-14:19
+activity#io.element.android.features.lockscreen.impl.unlock.activity.PinUnlockActivity
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:11:9-13:116
+	android:configChanges
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:13:13-114
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml:12:13-105
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/lockscreen/impl/src/main/AndroidManifest.xml

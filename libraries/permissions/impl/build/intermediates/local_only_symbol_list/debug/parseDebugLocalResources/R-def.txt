@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string troubleshoot_notifications_test_check_permission_description
+string troubleshoot_notifications_test_check_permission_title

@@ -1,0 +1,7 @@
+int string leave_conversation_alert_subtitle 0x0
+int string leave_room_alert_empty_subtitle 0x0
+int string leave_room_alert_private_subtitle 0x0
+int string leave_room_alert_select_new_owner_action 0x0
+int string leave_room_alert_select_new_owner_subtitle 0x0
+int string leave_room_alert_select_new_owner_title 0x0
+int string leave_room_alert_subtitle 0x0

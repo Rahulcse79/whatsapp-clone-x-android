@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml:2:13-83
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml:2:13-83
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml:2:23-81
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/voiceplayer/api/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4117853024126538183.xml

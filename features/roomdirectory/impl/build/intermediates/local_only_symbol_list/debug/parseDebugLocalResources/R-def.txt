@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string screen_room_directory_search_loading_error
+string screen_room_directory_search_title

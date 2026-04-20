@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+string screen_report_room_leave_failed_alert_message
+string screen_report_room_leave_failed_alert_title
+string screen_report_room_reason_footer
+string screen_report_room_reason_placeholder
+string screen_report_room_title

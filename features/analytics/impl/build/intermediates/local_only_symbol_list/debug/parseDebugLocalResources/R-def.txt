@@ -1,0 +1,9 @@
+R_DEF: Internal format may change without notice
+local
+string screen_analytics_prompt_data_usage
+string screen_analytics_prompt_help_us_improve
+string screen_analytics_prompt_read_terms
+string screen_analytics_prompt_read_terms_content_link
+string screen_analytics_prompt_settings
+string screen_analytics_prompt_third_party_sharing
+string screen_analytics_prompt_title

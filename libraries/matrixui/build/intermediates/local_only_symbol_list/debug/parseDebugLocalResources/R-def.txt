@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+string screen_bottom_sheet_create_dm_confirmation_button_title
+string screen_bottom_sheet_create_dm_message
+string screen_bottom_sheet_create_dm_title
+string screen_bottom_sheet_create_dm_unknown_user_content
+string screen_bottom_sheet_create_dm_unknown_user_title
+string screen_invites_invited_you

@@ -1,0 +1,2 @@
+int string screen_join_room_loading_alert_title 0x0
+int string screen_room_alias_resolver_resolve_alias_failure 0x0

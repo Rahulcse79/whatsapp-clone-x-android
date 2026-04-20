@@ -1,0 +1,24 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:8:1-17:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:8:1-17:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:8:11-69
+application
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:10:5-15:19
+meta-data#io.sentry.auto-init
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:12:9-14:37
+	android:value
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:14:13-34
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:13:13-47
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml

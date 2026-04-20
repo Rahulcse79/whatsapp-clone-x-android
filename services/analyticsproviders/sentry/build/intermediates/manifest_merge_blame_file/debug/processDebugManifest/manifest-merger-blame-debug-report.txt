@@ -1,0 +1,26 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~ Copyright 2023 New Vector Ltd.
+5  ~
+6  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+7  ~ Please see LICENSE files in the repository root for full details.
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="io.element.android.services.analyticsproviders.sentry" >
+11
+12    <uses-sdk android:minSdkVersion="24" />
+13
+14    <application>
+14-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:10:5-15:19
+15
+16        <!-- Sentry auto-initialization disabled -->
+17        <meta-data
+17-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:12:9-14:37
+18            android:name="io.sentry.auto-init"
+18-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:13:13-47
+19            android:value="false" />
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/services/analyticsproviders/sentry/src/main/AndroidManifest.xml:14:13-34
+20    </application>
+21
+22</manifest>

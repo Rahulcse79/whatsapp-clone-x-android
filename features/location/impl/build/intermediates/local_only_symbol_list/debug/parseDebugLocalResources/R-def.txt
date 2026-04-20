@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string screen_share_location_live_location_disclaimer_title
+string screen_share_location_live_location_duration_picker_title

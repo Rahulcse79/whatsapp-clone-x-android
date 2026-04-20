@@ -1,0 +1,5 @@
+int string screen_signed_out_reason_1 0x0
+int string screen_signed_out_reason_2 0x0
+int string screen_signed_out_reason_3 0x0
+int string screen_signed_out_subtitle 0x0
+int string screen_signed_out_title 0x0

@@ -1,0 +1,136 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:8:1-93:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:8:1-93:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:8:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:10:5-12:36
+	android:required
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:11:9-47
+uses-feature#android.hardware.microphone
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:14:9-51
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:17:5-77
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:17:22-74
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:18:5-71
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:18:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:19:5-65
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:19:22-62
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:20:22-77
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:21:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:24:5-77
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:24:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MICROPHONE
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:25:5-88
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:25:22-85
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:27:22-78
+application
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:29:5-91:19
+activity#io.element.android.features.call.impl.ui.ElementCallActivity
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:30:9-70:20
+	android:label
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:34:13-49
+	android:launchMode
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:35:13-44
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:33:13-36
+	android:supportsPictureInPicture
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:36:13-52
+	android:configChanges
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:32:13-133
+	android:taskAffinity
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:37:13-68
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:31:13-51
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:call.element.io+data:scheme:https
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:39:13-49:29
+	android:autoVerify
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:39:28-53
+action#android.intent.action.VIEW
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:17-76
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:42:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:17-78
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:43:27-75
+data
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:17-48
+	android:host
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:48:23-53
+	android:scheme
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:45:23-45
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:call+data:scheme:element
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:51:13-59:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:io.element.call
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:61:13-68:29
+activity#io.element.android.features.call.impl.ui.IncomingCallActivity
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:72:9-78:71
+	android:excludeFromRecents
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:75:13-46
+	android:launchMode
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:77:13-44
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:76:13-37
+	android:configChanges
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:74:13-114
+	android:taskAffinity
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:78:13-68
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:73:13-52
+service#io.element.android.features.call.impl.services.CallForegroundService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:80:9-84:58
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:82:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:83:13-37
+	android:foregroundServiceType
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:84:13-55
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:81:13-59
+receiver#io.element.android.features.call.impl.receivers.DeclineCallBroadcastReceiver
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:86:9-89:40
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:88:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:89:13-37
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml:87:13-67
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/call/impl/src/main/AndroidManifest.xml

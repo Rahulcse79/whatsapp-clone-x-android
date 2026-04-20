@@ -1,0 +1,5 @@
+io.element.android.features.rageshake.api
+string crash_detection_dialog_content
+string rageshake_detection_dialog_content
+string settings_rageshake
+string settings_rageshake_detection_threshold

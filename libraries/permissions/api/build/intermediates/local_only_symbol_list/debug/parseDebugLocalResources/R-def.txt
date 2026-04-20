@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+string dialog_permission_camera
+string dialog_permission_generic
+string dialog_permission_microphone
+string dialog_permission_notification

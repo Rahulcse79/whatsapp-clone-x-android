@@ -1,0 +1,2 @@
+int string screen_room_directory_search_loading_error 0x0
+int string screen_room_directory_search_title 0x0

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_qr_code_login_invalid_scan_state_retry_button">"Повторен опит"</string>
+</resources>

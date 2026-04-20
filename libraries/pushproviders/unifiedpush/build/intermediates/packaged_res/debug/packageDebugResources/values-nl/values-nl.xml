@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="troubleshoot_notifications_test_unified_push_success">
+    <item quantity="one">"%1$d verdeler gevonden: %2$s."</item>
+    <item quantity="other">"%1$d verdelers gevonden: %2$s."</item>
+  </plurals>
+    <string name="troubleshoot_notifications_test_unified_push_description">"Ervoor zorgen dat UnifiedPush verdelers beschikbaar zijn."</string>
+    <string name="troubleshoot_notifications_test_unified_push_failure">"Geen push-verdelers gevonden."</string>
+    <string name="troubleshoot_notifications_test_unified_push_title">"UnifiedPush controleren"</string>
+</resources>

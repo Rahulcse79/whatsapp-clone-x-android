@@ -1,0 +1,4 @@
+int string crash_detection_dialog_content 0x0
+int string rageshake_detection_dialog_content 0x0
+int string settings_rageshake 0x0
+int string settings_rageshake_detection_threshold 0x0

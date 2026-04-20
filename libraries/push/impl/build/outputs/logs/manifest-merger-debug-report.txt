@@ -1,0 +1,66 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:8:1-39:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:8:1-39:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:8:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:10:5-77
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:10:22-74
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:11:5-95
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:11:22-92
+application
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:13:5-37:19
+service#io.element.android.libraries.push.impl.push.FetchPushForegroundService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:14:9-17:38
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:17:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:16:13-37
+	android:foregroundServiceType
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:15:13-57
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:14:18-65
+receiver#io.element.android.libraries.push.impl.notifications.TestNotificationReceiver
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:20:13-67
+receiver#io.element.android.libraries.push.impl.notifications.NotificationBroadcastReceiver
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:22:9-25:40
+	android:enabled
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:24:13-35
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:23:13-72
+provider#io.element.android.libraries.push.impl.notifications.NotificationsFileProvider
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:27:9-35:20
+	android:grantUriPermissions
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:31:13-47
+	android:authorities
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:29:13-78
+	android:exported
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:28:13-68
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:32:13-34:72
+	android:resource
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml:33:17-67
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/libraries/push/impl/src/main/AndroidManifest.xml

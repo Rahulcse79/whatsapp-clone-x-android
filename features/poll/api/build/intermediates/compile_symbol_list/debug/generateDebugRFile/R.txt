@@ -1,0 +1,3 @@
+int plurals a11y_polls_percent_of_total 0x0
+int string a11y_polls_will_remove_selection 0x0
+int string a11y_polls_winning_answer 0x0

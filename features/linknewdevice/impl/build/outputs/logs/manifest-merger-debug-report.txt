@@ -1,0 +1,24 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:7:1-17:12
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:7:1-17:12
+	package
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:7:11-69
+queries
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:9:5-15:15
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:12:9-14:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:13:13-90
+	android:name
+		ADDED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:13:21-87
+uses-sdk
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml
+INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml

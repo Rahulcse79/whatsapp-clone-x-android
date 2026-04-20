@@ -1,0 +1,28 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2025 Element Creations Ltd.
+4  ~
+5  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+6  ~ Please see LICENSE files in the repository root for full details.
+7-->
+8<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+9    package="io.element.android.features.linknewdevice.impl" >
+10
+11    <uses-sdk android:minSdkVersion="24" />
+12
+13    <queries>
+13-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:9:5-15:15
+14
+15        <!--
+16         To open URL in CustomTab (prefetch, etc.). It makes CustomTabsClient.getPackageName() work
+17         see https://developer.android.com/training/package-visibility/use-cases#open-urls-custom-tabs
+18        -->
+19        <intent>
+19-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:12:9-14:18
+20            <action android:name="android.support.customtabs.action.CustomTabsService" />
+20-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:13:13-90
+20-->/Users/muskansethi/Documents/GitHub/whatsapp-clone-x-android/features/linknewdevice/impl/src/main/AndroidManifest.xml:13:21-87
+21        </intent>
+22    </queries>
+23
+24</manifest>

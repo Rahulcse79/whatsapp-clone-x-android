@@ -1,0 +1,4 @@
+io.element.android.features.poll.api
+plurals a11y_polls_percent_of_total
+string a11y_polls_will_remove_selection
+string a11y_polls_winning_answer
